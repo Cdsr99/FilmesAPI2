@@ -1,10 +1,8 @@
-using System.ComponentModel.DataAnnotations;
-
-namespace FilmesApi.Data.Dtos;
-
-public class CreateEnderecoDto
+﻿namespace FilmesApi.Data.Dtos
 {
-    [Required(ErrorMessage = "O campo Logradouro é obrigatório")]
-    public string Logradouro { get; set; }
-    public int Numero { get; set; }
+    public class CreateEnderecoDto
+    {
+        public string Logradouro { get; set; }
+        public int Numero { get; set; }
+    }
 }
